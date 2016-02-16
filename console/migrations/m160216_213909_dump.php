@@ -6,7 +6,7 @@ class m160216_213909_dump extends Migration
 {
     public function up()
     {
-
+        $this->execute(file_get_contents(__DIR__ . '/dump.sql'));
     }
 
     public function down()
